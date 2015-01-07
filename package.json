@@ -1,0 +1,32 @@
+{
+  "name": "portal-node",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "gm": "^1.17.0",
+    "iconv": "^2.1.4",
+    "jsdom": "^2.0.0",
+    "request": "^2.51.0",
+    "webshot": "^0.15.3"
+  },
+  "main": "bot.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "node bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/carpedm20/portal-node"
+  },
+  "keywords": [
+    "node",
+    "portal",
+    "unist"
+  ],
+  "author": "carpedm20 (http://carpedm20.github.io)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carpedm20/portal-node/issues"
+  },
+  "homepage": "https://github.com/carpedm20/portal-node"
+}
