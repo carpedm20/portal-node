@@ -7,6 +7,8 @@ var Iconv  = require('iconv').Iconv;
 var redis = require('redis'),
     client = redis.createClient();
 
+var FB = require('./fb-auto').FB;
+
 var DATA_DIR = './img/'
 var WEBSHOT_OPTION = {
     userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36',
@@ -41,7 +43,8 @@ BOARD_IDS = {'B200902281833016691048': '전체공지',
              'B201309090952407345581': '학생지원공지',
              'B200912141432112623720': '취업 인턴쉽 리더쉽',
              'B201003111719010571299': '대학원 공지',
-             'B200905061207126011324': '보안 공지',};
+             'B200905061207126011324': '보안 공지',
+};
 
 BASE_URL  = 'http://portal.unist.ac.kr/EP/web/collaboration/bbs/jsp/'
 BOARD_URL = BASE_URL + 'BB_BoardLst.jsp?p=1&boardid=';
